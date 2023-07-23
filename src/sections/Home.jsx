@@ -9,10 +9,10 @@ function Home() {
   const homeRef = useRef()
   return (
     <div id="home" ref={homeRef} className={`${darkMode === false ? 'light-home' : 'dark-home'}
-    font-sans px-5 py-10 md:px-32 duration-300
+    font-sans duration-300
     `}>
       <Navbar target={homeRef.current} />
-      <div className="flex flex-col mt-24 md:flex-row md:space-x-16">
+      <div className="flex flex-col px-5 py-10 md:px-32 mt-24 md:flex-row md:space-x-16">
 
         <div className={`${darkMode === true ? 'text-white' : 'text-neutral'} lg:w-1/2`}>
           <div className="space-y-10">
@@ -45,13 +45,13 @@ function Home() {
             <p>&lt;<span className="text-[#50C3EC]">body</span>&gt;</p>
             <p className="ml-4 max-w-[350px]">&lt;<span className="text-[#50C3EC]">p</span>&gt;Welcome to my portfolio website! Learn more about me here.&lt;/<span className="text-[#50C3EC]">p</span>&gt;</p>
             <p>&lt;/<span className="text-[#50C3EC]">body</span>&gt;</p>
-            <p>&lt;/<span className="text-[#50C3EC]">html</span>&gt;</p>
-
-          
+            <p>&lt;/<span className="text-[#50C3EC]">html</span>&gt;</p> 
           </div>
         </div>
       </div>
 
+    <div className={`h-[200px] w-full bg-gradient-to-t ${darkMode === true ? 'from-base-100' : 'from-light-base-100'}`}>
+    </div>
     </div>
   )
 }

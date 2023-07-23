@@ -1,4 +1,5 @@
 import Home from "./sections/Home";
+import About from "./sections/About";
 import FixedLinks from "./components/FixedLinks";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
     <FixedLinks />
     <Home />
+    <About />
     </>
   );
 }

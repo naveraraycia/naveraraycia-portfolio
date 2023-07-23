@@ -15,7 +15,7 @@ function Navbar({target}) {
   }
   return (
     <>
-    <nav className={`font-sans flex justify-between items-center lg:space-x-10 ${darkMode === false ? 'text-neutral' : 'text-white'}`}>
+    <nav className={`font-sans flex justify-between items-center px-5 py-10 md:px-32 lg:space-x-10 ${darkMode === false ? 'text-neutral' : 'text-white'}`}>
       <div className="hidden lg:block">
         <Button>resume</Button> 
       </div>

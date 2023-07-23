@@ -15,7 +15,7 @@ module.exports = {
         sans: ['Montserrat', 'sans-serif']
       },
       colors: {
-    
+        "light-base-100": '#F0FFFA'
       }
     },
   },
@@ -29,7 +29,6 @@ module.exports = {
           "accent": "#98F1FF",
           "neutral": "#41174C",
           "base-100": "#282834",
-
         }
       }
     ]
