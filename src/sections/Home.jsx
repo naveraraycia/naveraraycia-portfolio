@@ -8,7 +8,7 @@ function Home() {
   const {darkMode, dispatch} = useContext(AppContext)
   const homeRef = useRef()
   return (
-    <div id="home" ref={homeRef} className={`${darkMode === false ? 'light-home' : 'dark-home'}
+    <section id="home" ref={homeRef} className={`${darkMode === false ? 'light-home' : 'dark-home'}
     font-sans duration-300
     `}>
       <Navbar target={homeRef.current} />
@@ -52,7 +52,7 @@ function Home() {
 
     <div className={`h-[200px] w-full bg-gradient-to-t ${darkMode === true ? 'from-base-100' : 'from-light-base-100'}`}>
     </div>
-    </div>
+    </section>
   )
 }
 

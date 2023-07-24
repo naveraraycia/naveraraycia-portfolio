@@ -104,3 +104,30 @@ nav li a:hover {
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
 }
+
+/* Skill Set */
+.dark-skill-set {
+  background-color: hsla(240, 12%, 18%, 1);
+  background-image: radial-gradient(
+      at 82% 57%,
+      hsla(333, 100%, 67%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 98% 41%, hsla(291, 91%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 36% 45%, hsla(266, 100%, 55%, 1) 0px, transparent 50%),
+    radial-gradient(at 60% 84%, hsla(266, 85%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 29% 91%, hsla(287, 83%, 75%, 1) 0px, transparent 50%);
+}
+
+.light-skill-set {
+  background-color: hsla(160, 100%, 97%, 1);
+  background-image: radial-gradient(
+      at 82% 57%,
+      hsla(222, 83%, 88%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 98% 41%, hsla(181, 84%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 36% 45%, hsla(256, 0%, 100%, 1) 0px, transparent 50%),
+    radial-gradient(at 60% 84%, hsla(263, 0%, 100%, 1) 0px, transparent 50%),
+    radial-gradient(at 29% 91%, hsla(287, 83%, 75%, 1) 0px, transparent 50%);
+}
