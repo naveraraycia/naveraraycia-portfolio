@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;800;900&display=swap");
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 .dark-home {
   background-color: hsla(240, 12%, 18%, 1);
@@ -130,4 +132,67 @@ nav li a:hover {
     radial-gradient(at 36% 45%, hsla(256, 0%, 100%, 1) 0px, transparent 50%),
     radial-gradient(at 60% 84%, hsla(263, 0%, 100%, 1) 0px, transparent 50%),
     radial-gradient(at 29% 91%, hsla(287, 83%, 75%, 1) 0px, transparent 50%);
+}
+
+/* COURSES */
+.dark-course {
+  background-color: hsla(240, 12%, 18%);
+  background-image: radial-gradient(
+      at 49% 61%,
+      hsla(333, 100%, 67%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 17% 61%, hsla(333, 91%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 63% 80%, hsla(266, 100%, 55%, 1) 0px, transparent 50%),
+    radial-gradient(at 45% 32%, hsla(212, 85%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 63%, hsla(333, 66%, 68%, 1) 0px, transparent 50%),
+    radial-gradient(at 87% 55%, hsla(248, 79%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 71% 34%, hsla(240, 12%, 18%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 97%, hsla(333, 100%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 75%, hsla(333, 100%, 97%, 1) 0px, transparent 50%),
+    radial-gradient(at 99% 46%, hsla(288, 66%, 71%, 1) 0px, transparent 50%);
+}
+
+.light-course {
+  background-color: hsla(160, 100%, 97%, 1);
+  background-image: radial-gradient(
+      at 49% 61%,
+      hsla(171, 77%, 68%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 17% 61%, hsla(160, 100%, 97%, 1) 0px, transparent 50%),
+    radial-gradient(at 63% 80%, hsla(160, 100%, 97%, 1) 0px, transparent 50%),
+    radial-gradient(at 45% 32%, hsla(160, 100%, 97%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 63%, hsla(180, 66%, 68%, 1) 0px, transparent 50%),
+    radial-gradient(at 87% 55%, hsla(248, 79%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 71% 34%, hsla(160, 100%, 97%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 97%, hsla(216, 71%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 75%, hsla(160, 100%, 97%, 1) 0px, transparent 50%),
+    radial-gradient(at 99% 46%, hsla(288, 66%, 71%, 1) 0px, transparent 50%);
+}
+
+.slick-slide {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.slick-dots {
+  bottom: -70px !important;
+}
+
+.slick-initialized .slick-slide {
+  display: flex !important;
+}
+
+.slick-track,
+.slick-list {
+  display: flex !important;
+}
+
+.slide-slide {
+  height: inherit !important;
+}
+
+.slide {
+  height: 100% !important;
 }
