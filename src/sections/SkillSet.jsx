@@ -22,7 +22,7 @@ function SkillSet() {
             <p className={`${darkMode === true ? 'text-white' : 'text-neutral'} max-w-xl`}>Presented below are the technologies, frameworks, languages, and tools that I primarily focus on and am working with recently.</p>
           </div>
 
-          <div className="grid gap-6 justify-items-center grid-cols-2 grid-rows-5 sm:grid-cols-3 sm:grid-rows-3 xl:grid-cols-5 xl:grid-rows-2">
+          <div className="grid gap-6 justify-items-center grid-cols-3 grid-rows-4 sm:grid-cols-3 sm:grid-rows-3 xl:grid-cols-5 xl:grid-rows-2">
             <Card>
               <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                 <FaHtml5 size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
@@ -103,7 +103,7 @@ function SkillSet() {
 
           <div className="space-y-6 w-full">
             <div className="w-full">
-              <div className="grid gap-6 justify-items-center grid-cols-2 grid-rows-3 sm:grid-cols-3 sm:grid-rows-2 xl:grid-cols-5 xl:grid-rows-1">
+              <div className="grid gap-6 justify-items-center grid-cols-3 grid-rows-4 sm:grid-cols-3 sm:grid-rows-2 xl:grid-cols-5 xl:grid-rows-1">
                 <Card>
                   <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                     <FaPython size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
@@ -134,16 +134,31 @@ function SkillSet() {
                     <h5 className={`text-md text-center ${darkMode ? 'text-white' : 'text-neutral'}`}>Selenium</h5>
                   </div>
                 </Card>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <div className="grid gap-6 justify-items-center grid-cols-2 grid-rows-3 sm:grid-cols-3 sm:grid-rows-2 xl:grid-cols-5 xl:grid-rows-1">
-                <Badge outline={true}>Linux Shell Script</Badge>
-                <Badge outline={true}>VHDL</Badge>
-                <Badge outline={true}>Visual Basic</Badge>
-                <Badge outline={true}>C++</Badge>
-                <Badge outline={true}>Android Studio</Badge>
+                <Card>
+                  <div className='uppercase flex font-black flex-col justify-center items-center'>
+                    <h5 className={`text-md text-center ${darkMode ? 'text-white' : 'text-neutral'}`}>Linux Shell Script</h5>
+                  </div>
+                </Card>
+                <Card>
+                  <div className='uppercase flex font-black flex-col justify-center items-center'>
+                    <h5 className={`text-md text-center ${darkMode ? 'text-white' : 'text-neutral'}`}>VHDL</h5>
+                  </div>
+                </Card>
+                <Card>
+                  <div className='uppercase flex font-black flex-col justify-center items-center'>
+                    <h5 className={`text-md text-center ${darkMode ? 'text-white' : 'text-neutral'}`}>Visual Basic</h5>
+                  </div>
+                </Card>
+                <Card>
+                  <div className='uppercase flex font-black flex-col justify-center items-center'>
+                    <h5 className={`text-md text-center ${darkMode ? 'text-white' : 'text-neutral'}`}>C++</h5>
+                  </div>
+                </Card>
+                <Card>
+                  <div className='uppercase flex font-black flex-col justify-center items-center'>
+                    <h5 className={`text-md text-center ${darkMode ? 'text-white' : 'text-neutral'}`}>Android Studio</h5>
+                  </div>
+                </Card>
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ const AppContext = createContext()
 export const AppProvider = ({children}) => {
   const initialState = {
     loading: false,
-    darkMode: true
+    darkMode: false
   }
 
   // use the reducer hook here

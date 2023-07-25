@@ -84,12 +84,12 @@ function About() {
         </div>
       </div>
 
-      <div className={`relative flex flex-col items-center ${darkMode === true ? 'text-white' : 'text-neutral'} xl:flex-row xl:space-x-20`}>
+      <div className={`relative flex flex-col items-center ${darkMode === true ? 'text-white' : 'text-neutral'} xl:flex-row xl:justify-center`}>
         <div>
           <div className={`absolute w-[250px] h-[250px] top-40 blur-3xl right-96 rounded-full ${darkMode === true ? 'bg-[#6A25C7]' : 'bg-[#C4F7FC]'} xl:left-24 xl:right-0 xl:top-10`}></div>
           <div className={`absolute w-[250px] bottom-5 right-60 blur-3xl h-[250px] rounded-full ${darkMode === true ? 'bg-[#F857E7]' : 'bg-[#FEBEFF]'} xl:left-60 xl:right-0`}></div>
         </div>
-        <div className="relative px-5 z-20 space-y-5 order-2 mt-6 xl:order-1 xl:mt-0">
+        <div className="relative mr-5 px-5 z-20 space-y-5 order-2 mt-6 xl:order-1 xl:mt-0">
           <div tabIndex={0} className={`collapse collapse-arrow duration-300 ${darkMode === true ? 'bg-neutral' : 'bg-white'} bg-opacity-30`}>   
           <div className="collapse-title text-md font-black flex items-center uppercase space-x-10 hover:cursor-pointer xl:text-xl">
           <div className={`rounded-full bg-primary w-fit px-4 py-2 ${darkMode === false && 'text-white'}`}>1</div>

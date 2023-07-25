@@ -12,7 +12,7 @@ function Home() {
     font-sans duration-300
     `}>
       <Navbar target={homeRef.current} />
-      <div className="flex flex-col px-5 py-10 md:px-32 mt-10 md:flex-row md:space-x-16">
+      <div className="flex flex-col px-5 py-10 md:px-32 md:flex-row md:space-x-16">
 
         <div className={`${darkMode === true ? 'text-white' : 'text-neutral'} lg:w-1/2`}>
           <div className="space-y-10">
