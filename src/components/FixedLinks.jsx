@@ -10,7 +10,7 @@ function FixedLinks() {
   const [selected, setSelected] = useState(1)
 
   return (
-    <div className={`hidden md:flex`}>
+    <div className={`hidden relative z-50 md:flex`}>
       <div id="fixedDots" className="fixed bottom-52 left-10">
         <ul className="space-y-8">
           <li onClick={() => setSelected(1)} className={`${darkMode === false ? 'hover:bg-neutral' : ' hover:bg-secondary'} ${selected === 1 && darkMode === false ? 'bg-neutral' : selected === 1 && darkMode === true ? 'bg-secondary' : 'bg-[#D9D9D9]'}
