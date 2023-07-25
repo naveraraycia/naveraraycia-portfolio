@@ -15,11 +15,11 @@ function CourseItem({img, dateCompleted, instructor, number}) {
         <div className="flex items-center mx-3 justify-between md:mx-0">
           <div>
             <div className="space-x-4">
-              <span className={`font-extrabold ${darkMode ? 'text-[#98F1FF]' : 'text-primary'} text-sm md:text-lg`}>Completed:</span>
+              <span className={`font-extrabold ${darkMode ? 'text-[#98F1FF]' : 'text-primary'} text-sm md:text-md`}>Completed:</span>
               <span className="text-xs md:text-md">{dateCompleted}</span>
             </div>
             <div className="space-x-4">
-              <span className={`font-extrabold ${darkMode ? 'text-[#98F1FF]' : 'text-primary'} text-sm md:text-lg`}>Instructor:</span>
+              <span className={`font-extrabold ${darkMode ? 'text-[#98F1FF]' : 'text-primary'} text-sm md:text-md`}>Instructor:</span>
               <span className="text-xs md:text-md">{instructor}</span>
             </div>
           </div>

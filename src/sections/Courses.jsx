@@ -25,18 +25,26 @@ function Courses() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1050,
+        breakpoint: 1250,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 1071,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1
         }
-      }
+      },
     ]
   };
 

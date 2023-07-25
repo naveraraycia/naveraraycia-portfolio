@@ -30,7 +30,7 @@ function Education() {
         </div>
         </div>
         {/* Description */}
-        <div className="space-y-28">
+        <div className="space-y-16">
           <div className="relative w-full space-y-4 lg:w-fit">
             <div>
               <div className={`absolute w-[400px] h-[400px] top-40 blur-3xl left-0 rounded-full ${darkMode === true ? 'bg-[#6A25C7]' : 'bg-[#C4F7FC]'}`}></div>
