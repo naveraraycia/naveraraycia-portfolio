@@ -5,7 +5,7 @@ function CourseItem({img, dateCompleted, instructor, number}) {
   const {darkMode} = useContext(AppContext)
 
   return (
-    <div className={`${darkMode ? 'bg-neutral bg-opacity-30': 'bg-white bg-opacity-50'} rounded-[20px] p-3 pb-5 h-full w-fit md:p-10`}>
+    <div className={`${darkMode ? 'bg-black bg-opacity-30': 'bg-white bg-opacity-50'} duration-300 rounded-[20px] p-3 pb-5 h-full w-fit md:p-10`}>
       <div className="space-y-5">
         <div className="relative">
           <img src={img} alt="Certificate" className="w-[500px] object-cover rounded-[20px]" />

@@ -6,6 +6,10 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .dark-home {
   background-color: hsla(240, 12%, 18%, 1);
   background-image: radial-gradient(
@@ -42,16 +46,12 @@
   @apply bg-gradient-to-r from-[#FF6C98] to-primary;
 }
 
-nav li a {
+nav li {
   @apply duration-200;
 }
 
-nav li a:hover {
-  @apply font-bold;
-}
-
-#fixedDots li {
-  @apply h-2 w-2 duration-200 rounded-full;
+nav li:hover {
+  @apply font-bold cursor-pointer;
 }
 
 /* Hamburger Menu */
@@ -195,4 +195,13 @@ nav li a:hover {
 
 .slide {
   height: 100% !important;
+}
+
+.project-img:hover .project-overlay {
+  display: flex !important;
+  cursor: pointer !important;
+}
+
+.project-overlay {
+  display: none;
 }

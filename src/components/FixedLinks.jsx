@@ -11,30 +11,6 @@ function FixedLinks() {
 
   return (
     <div className={`hidden relative z-50 md:flex`}>
-      <div id="fixedDots" className="fixed bottom-52 left-10">
-        <ul className="space-y-8">
-          <li onClick={() => setSelected(1)} className={`${darkMode === false ? 'hover:bg-neutral' : ' hover:bg-secondary'} ${selected === 1 && darkMode === false ? 'bg-neutral' : selected === 1 && darkMode === true ? 'bg-secondary' : 'bg-[#D9D9D9]'}
-           bg-[#D9D9D9] hover:cursor-pointer 
-          `}></li>
-          <li onClick={() => setSelected(2)} className={`${darkMode === false ? 'hover:bg-neutral' : ' hover:bg-secondary'} ${selected === 2 && darkMode === false ? 'bg-neutral' : selected === 2 && darkMode === true ? 'bg-secondary' : 'bg-[#D9D9D9]'}
-           bg-[#D9D9D9] hover:cursor-pointer 
-          `}></li>
-          <li onClick={() => setSelected(3)} className={`${darkMode === false ? 'hover:bg-neutral' : ' hover:bg-secondary'} ${selected === 3 && darkMode === false ? 'bg-neutral' : selected === 3 && darkMode === true ? 'bg-secondary' : 'bg-[#D9D9D9]'}
-           bg-[#D9D9D9] hover:cursor-pointer 
-          `}></li>
-          <li onClick={() => setSelected(4)} className={`${darkMode === false ? 'hover:bg-neutral' : ' hover:bg-secondary'} ${selected === 4 && darkMode === false ? 'bg-neutral' : selected === 4 && darkMode === true ? 'bg-secondary' : 'bg-[#D9D9D9]'}
-           bg-[#D9D9D9] hover:cursor-pointer 
-          `}></li>
-          <li onClick={() => setSelected(5)} className={`${darkMode === false ? 'hover:bg-neutral' : ' hover:bg-secondary'} ${selected === 5 && darkMode === false ? 'bg-neutral' : selected === 5 && darkMode === true ? 'bg-secondary' : 'bg-[#D9D9D9]'}
-           bg-[#D9D9D9] hover:cursor-pointer 
-          `}></li>
-          <li onClick={() => setSelected(6)} className={`${darkMode === false ? 'hover:bg-neutral' : ' hover:bg-secondary'} ${selected === 6 && darkMode === false ? 'bg-neutral' : selected === 6 && darkMode === true ? 'bg-secondary' : 'bg-[#D9D9D9]'}
-           bg-[#D9D9D9] hover:cursor-pointer 
-          `}></li>
-          
-        </ul>
-      </div>
-
       <div id="fixedLinks" className="fixed bottom-52 right-10">
         <ul className="space-y-8">
           <li onClick={()=> dispatch({type: 'TOGGLE_MODE', payload: !darkMode})}>
@@ -45,22 +21,22 @@ function FixedLinks() {
             )}
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/naveraraycia" target="_blank">
               <AiFillGithub size={30} className={`${darkMode === true ? 'text-white hover:text-secondary' : 'text-neutral hover:text-primary'} hover:cursor-pointer`} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/imraycie" target="_blank">
               <AiOutlineInstagram size={30} className={`${darkMode === true ? 'text-white hover:text-secondary' : 'text-neutral hover:text-primary'} hover:cursor-pointer`} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.facebook.com/raynicornn" target="_blank">
               <FiFacebook size={30} className={`${darkMode === true ? 'text-white hover:text-secondary' : 'text-neutral hover:text-primary'} hover:cursor-pointer`} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/naveraraycia" target="_blank">
               <AiOutlineLinkedin size={30} className={`${darkMode === true ? 'text-white hover:text-secondary' : 'text-neutral hover:text-primary'} hover:cursor-pointer`} />
             </a>
           </li>
