@@ -9,7 +9,7 @@ function Education() {
   const {darkMode} = useContext(AppContext)
 
   return (
-    <section className={`px-5 pt-40 pb-60 md:px-32 space-y-20 ${darkMode === true ? 'bg-base-100' : 'bg-light-base-100'} duration-300`}>
+    <section className={`overflow-x-hidden px-5 pt-40 pb-60 md:px-32 space-y-20 ${darkMode === true ? 'bg-base-100' : 'bg-light-base-100'} duration-300`}>
       <div id="education" className={`flex flex-col items-center space-y-14 ${darkMode === true ? 'text-white' : 'text-neutral'} md:space-y-32 xl:flex-row xl:items-left justify-center`}>
         {/* photos */}
         <div className="flex flex-col space-y-5 w-full justify-center items-center sm:flex-row sm:space-x-5 sm:space-y-0 sm:w-fit translate-x-0 md:translate-x-10 xl:translate-x-0">
