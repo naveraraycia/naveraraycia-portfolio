@@ -27,16 +27,20 @@ function Portfolio() {
       </div>
 
 
-      <div className="w-full space-y-10 flex flex-col items-center justify-center sm:space-y-20">
-        <div className='space-y-10 w-full flex flex-col justify-center items-center'>
-          <ProjectItem />
-          <ProjectItem />
+      {/* Personal Projects */}
+      {clicked === 1 ? (
+        <div className="w-full space-y-10 flex flex-col items-center justify-center sm:space-y-20 duration-300">
+          <div className='space-y-10 w-full flex flex-col justify-center items-center'>
+            <ProjectItem />
+            <ProjectItem />
+          </div>
+
+          <div className="w-fit">
+            <Button version={'outlined'}>Load More</Button>
+          </div>
         </div>
 
-        <div className="w-fit">
-          <Button version={'outlined'}>Load More</Button>
-        </div>
-      </div>
+      ) : clicked === 2 ? <h3>Internship project...</h3> : <h3>Thesis projects...</h3>}
 
     </section>
   )

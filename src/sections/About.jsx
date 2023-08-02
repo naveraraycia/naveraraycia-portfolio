@@ -11,6 +11,11 @@ import Badge from "../components/Badge"
 
 function About() {
   const {darkMode} = useContext(AppContext)
+  function handleClickScroll(idName){
+    const sectionToScroll = document.getElementById(`${idName}`)
+
+    sectionToScroll.scrollIntoView({behavior: 'smooth'})
+  }
   return (
     <section className={`overflow-x-hidden px-5 pt-0 pb-32 space-y-20 ${darkMode === true ? 'bg-base-100' : 'bg-light-base-100'} duration-300 xl:space-y-96 sm:pb-60 sm:pt-40 md:px-32`}>
       <div id="about" className={`flex flex-col items-center space-y-14 ${darkMode === true ? 'text-white' : 'text-neutral'} md:space-y-32 xl:flex-row xl:items-left`}>
@@ -80,7 +85,10 @@ function About() {
             <p><span className={`${darkMode === true ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Nationality:</span> Filipino</p>
             <p><span className={`${darkMode === true ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Location:</span> San Diego, CA, USA</p>
           </div>
-          <Button>contacts</Button>
+
+          <div onClick={() => handleClickScroll('contact')} className="w-full sm:w-fit">
+            <Button>contacts</Button>
+          </div>
         </div>
       </div>
 

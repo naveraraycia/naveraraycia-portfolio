@@ -42,7 +42,7 @@ function Education() {
             </div>
 
             <div className="z-50 relative max-w-[450px]">
-              <p className="text-sm sm:text-lg">I attended the same institution for both my Senior years in High School as well as college. I graduated from college last September 23, 2022 with the degree below.</p>
+              <p className="text-sm sm:text-lg">I attended the same institution from senior high school to college and graduated with the degree below on September 23, 2022.</p>
             </div>
           </div>
 

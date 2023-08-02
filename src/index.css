@@ -183,6 +183,7 @@ nav li:hover {
 
 .slick-initialized .slick-slide {
   display: flex !important;
+  justify-content: center !important;
 }
 
 .slick-track,

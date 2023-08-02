@@ -65,7 +65,7 @@ function Courses() {
         <div className="space-y-10 sm:space-y-16">
           <div className="space-y-3 w-full flex flex-col items-center justify-center text-center">
             <h2 className="font-black text-xl max-w-[450px] sm:text-3xl">Completed Online Courses & Seminars Attended</h2>
-            <p className="max-w-[670px] text-sm sm:text-lg">Here are the online courses I took to further extend my knowledge in the world of Web Development and Frontend. Presented as well are the seminars I attended in the university that focused on tech.</p>
+            <p className="max-w-[670px] text-sm sm:text-lg">Here are the online courses I took and university seminars that expanded my knowledge in Web Development, Frontend, and overall tech.</p>
           </div>
 
           {/* Slider */}

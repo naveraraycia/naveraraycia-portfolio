@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useContext, useEffect  } from "react";
+import AppContext from "./context/AppContext";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import FixedLinks from "./components/FixedLinks";
@@ -9,33 +11,44 @@ import Portfolio from './sections/Portfolio'
 import Contact from "./sections/Contact";
 import Footer from "./components/layout/Footer";
 import NotFound from "./pages/NotFound";
+import Spinner from "./components/Spinner";
 
 function App() {
-  return (
-    <>
+  const {loading, dispatch} = useContext(AppContext)
+
+  useEffect(()=>{
+    dispatch({type: 'SET_LOADING'})
+    setTimeout(()=>{
+      dispatch({type: 'REMOVE_LOADING'})
+    },1500)
+  }, [dispatch])
+
+  if(loading){
+    return <Spinner />
+  } else {
+    return (
       <Router>
         <Routes>
           <Route path="/" element={(
             <>   
-            <FixedLinks />
-            <Home />
-            <About />
-            <SkillSet />
-            <Education />
-            <Courses />
-            <Portfolio />
-            <Contact />
-            <Footer />
-          </>
+              <FixedLinks />
+              <Home />
+              <About />
+              <SkillSet />
+              <Education />
+              <Courses />
+              <Portfolio />
+              <Contact />
+              <Footer />
+            </>
           )} />
-
+  
           <Route path="/*" element={<NotFound />} />
-
+  
         </Routes>
-      </Router>
-    </>
-    
-  );
+      </Router> 
+    );
+  }
 }
 
 export default App;
