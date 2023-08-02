@@ -27,8 +27,8 @@ function Footer() {
           </a>
         </div>
 
-        <div className="font-semibold flex flex-col items-center justify-center">
-          <p>Designed and developed by Raycia Navera</p>
+        <div className="font-semibold flex flex-col items-center justify-center text-center">
+          <p className="text-xs sm:text-sm">Designed and developed by Raycia Navera</p>
           <p className="text-sm">Copyright &copy; {yearToday}</p>
         </div>
       </div>

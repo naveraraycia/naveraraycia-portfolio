@@ -55,8 +55,8 @@ function Navbar() {
       </div>
     </nav>
 
-    <ul id="menu" onClick={toggleMenu} className={`text-white fixed z-[99] top-0 bottom-0 left-0 hidden flex-col w-full min-h-screen justify-center items-center font-sans space-y-5 uppercase text-2xl bg-black bg-opacity-70 lg:hidden` }>
-      <li onClick={() => handleClickScroll('home')} className={`${darkMode === true ? 'hover:text-secondary' : 'hover:text-primary'} hover:cursor-pointer`}>Home</li>
+    <ul id="menu" onClick={toggleMenu} className={`text-white fixed z-[99] top-0 bottom-0 left-0 hidden flex-col w-full min-h-screen items-center font-sans space-y-5 uppercase text-2xl bg-black bg-opacity-70 lg:hidden` }>
+      <li onClick={() => handleClickScroll('home')} className={`${darkMode === true ? 'hover:text-secondary' : 'hover:text-primary'} mt-40 hover:cursor-pointer`}>Home</li>
       <li onClick={() => handleClickScroll('about')} className={`${darkMode === true ? 'hover:text-secondary' : 'hover:text-primary'} hover:cursor-pointer`}>About Me</li>
       <li onClick={() => handleClickScroll('skillSet')} className={`${darkMode === true ? 'hover:text-secondary' : 'hover:text-primary'} hover:cursor-pointer`}>Skill Set</li>
       <li onClick={() => handleClickScroll('education')} className={`${darkMode === true ? 'hover:text-secondary' : 'hover:text-primary'} hover:cursor-pointer`}>Education</li>

@@ -9,16 +9,16 @@ function CourseItem({img, dateCompleted, instructor, number}) {
       <div className="space-y-5">
         <div className="relative">
           <img src={img} alt="Certificate" className="w-[500px] object-cover rounded-[20px]" />
-          <a href={img} target={"_blank"} className="absolute right-0 bottom-3 scale-75 btn btn-primary px-10 text-white font-extrabold hover:bg-primary hover:scale-90 duration-300 md:right-2 md:bottom-5">view</a>
+          <a href={img} target={"_blank"} className="absolute right-0 bottom-3 scale-75 btn btn-primary text-xs py-2 px-4 text-white font-extrabold hover:bg-primary hover:scale-90 duration-300 sm:px-10 md:right-2 md:bottom-5">view</a>
         </div>
 
         <div className="flex items-center mx-3 justify-between md:mx-0">
-          <div>
-            <div className="space-x-4">
+          <div className="space-y-2 sm:space-y-0">
+            <div className="flex flex-col space-y-1 sm:flex-row sm:space-x-4 sm:space-y-0">
               <span className={`font-extrabold ${darkMode ? 'text-[#98F1FF]' : 'text-primary'} text-sm md:text-md`}>Completed:</span>
               <span className="text-xs md:text-md">{dateCompleted}</span>
             </div>
-            <div className="space-x-4">
+            <div className="flex flex-col space-y-1 sm:flex-row sm:space-x-4 sm:space-y-0">
               <span className={`font-extrabold ${darkMode ? 'text-[#98F1FF]' : 'text-primary'} text-sm md:text-md`}>Instructor:</span>
               <span className="text-xs md:text-md">{instructor}</span>
             </div>

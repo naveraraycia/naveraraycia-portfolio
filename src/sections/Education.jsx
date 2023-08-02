@@ -9,7 +9,7 @@ function Education() {
   const {darkMode} = useContext(AppContext)
 
   return (
-    <section className={`overflow-x-hidden px-5 pt-40 pb-60 md:px-32 space-y-20 ${darkMode === true ? 'bg-base-100' : 'bg-light-base-100'} duration-300`}>
+    <section className={`overflow-x-hidden px-5 pb-60 sm:pt-40 md:px-32 space-y-20 ${darkMode === true ? 'bg-base-100' : 'bg-light-base-100'} duration-300`}>
       <div id="education" className={`flex flex-col items-center space-y-14 ${darkMode === true ? 'text-white' : 'text-neutral'} md:space-y-32 xl:flex-row xl:items-left justify-center`}>
         {/* photos */}
         <div className="flex flex-col space-y-5 w-full justify-center items-center sm:flex-row sm:space-x-5 sm:space-y-0 sm:w-fit translate-x-0 md:translate-x-10 xl:translate-x-0">
@@ -42,17 +42,17 @@ function Education() {
             </div>
 
             <div className="z-50 relative max-w-[450px]">
-              <p>I attended the same institution for both my Senior years in High School as well as college. I graduated from college last September 23, 2022 with the degree below.</p>
+              <p className="text-sm sm:text-lg">I attended the same institution for both my Senior years in High School as well as college. I graduated from college last September 23, 2022 with the degree below.</p>
             </div>
           </div>
 
-          <div className="relative z-40 space-y-10 max-w-[700px]">
-            <div className="space-y-1 uppercase">
-              <div className="space-y-0">
-                <h4 className="font-bold text-md">Bachelor of science in</h4>
-                <h2 className="font-black text-3xl">Computer Engineering</h2>
+          <div className="relative z-40 space-y-5 max-w-[700px] sm:space-y-10">
+            <div className="uppercase sm:space-y-1">
+              <div>
+                <h4 className="font-bold text-sm sm:text-lg">Bachelor of science in</h4>
+                <h2 className="font-black text-lg sm:text-3xl">Computer Engineering</h2>
               </div>
-              <h3 className="font-black text-lg">Major in Software Engineering</h3>
+              <h3 className="font-black text-sm sm:text-xl">Major in Software Engineering</h3>
             </div>
             <div className="space-y-10 max-w-[400px]">
               <h3 className={`font-extrabold ${darkMode ? 'text-white' : 'text-[#3D8396]'}`}>De La Salle University - Dasmarinas, Philippines</h3>

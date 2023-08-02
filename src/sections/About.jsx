@@ -12,7 +12,7 @@ import Badge from "../components/Badge"
 function About() {
   const {darkMode} = useContext(AppContext)
   return (
-    <section className={`overflow-x-hidden px-5 pt-40 pb-60 md:px-32 space-y-20 ${darkMode === true ? 'bg-base-100' : 'bg-light-base-100'} duration-300 xl:space-y-96`}>
+    <section className={`overflow-x-hidden px-5 pt-0 pb-32 space-y-20 ${darkMode === true ? 'bg-base-100' : 'bg-light-base-100'} duration-300 xl:space-y-96 sm:pb-60 sm:pt-40 md:px-32`}>
       <div id="about" className={`flex flex-col items-center space-y-14 ${darkMode === true ? 'text-white' : 'text-neutral'} md:space-y-32 xl:flex-row xl:items-left`}>
         {/* photos */}
         <div className="flex flex-col space-y-5 w-full justify-center items-center sm:flex-row sm:space-x-5 sm:space-y-0 sm:w-fit translate-x-0 md:translate-x-10 xl:translate-x-0">
@@ -89,7 +89,7 @@ function About() {
           <div className={`absolute w-[250px] h-[250px] top-40 blur-3xl right-96 rounded-full ${darkMode === true ? 'bg-[#6A25C7]' : 'bg-[#C4F7FC]'} xl:left-24 xl:right-0 xl:top-10`}></div>
           <div className={`absolute w-[250px] bottom-5 right-60 blur-3xl h-[250px] rounded-full ${darkMode === true ? 'bg-[#F857E7]' : 'bg-[#FEBEFF]'} xl:left-60 xl:right-0`}></div>
         </div>
-        <div className="relative px-5 z-20 space-y-5 order-2 mt-6 xl:order-1 xl:mt-0 xl:mr-[100px]">
+        <div className="relative w-full z-20 space-y-5 order-2 mt-6 sm:w-fit xl:order-1 xl:mt-0 xl:mr-[100px]">
           <div tabIndex={0} className={`collapse collapse-arrow duration-300 ${darkMode === true ? 'bg-black bg-opacity-30' : 'bg-white bg-opacity-30'}`}>   
           <div className="collapse-title text-md font-black flex items-center uppercase space-x-10 hover:cursor-pointer xl:text-lg">
           <div className={`rounded-full bg-primary w-fit px-4 py-2 ${darkMode === false && 'text-white'}`}>1</div>
@@ -110,16 +110,16 @@ function About() {
             <div>Hobbies I enjoy</div>
             
           </div>
-          <div className="collapse-content"> 
+          <div className="collapse-content flex space-x-5 sm:flex-col sm:space-x-0 sm:-space-y-4"> 
             <div className="space-y-5">
-              <div className="my-4 flex space-x-5">
+              <div className="my-4 flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
                 <Badge version='purple'>Drawing</Badge>
                 <Badge version='pink'>Cooking</Badge>
                 <Badge version='purple'>Card Games</Badge>
               </div>
             </div>
             <div className="space-y-5">
-              <div className="my-4 flex space-x-5">
+              <div className="my-4 flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
                 <Badge version='pink'>Listening to music</Badge>
                 <Badge version='purple'>Programming</Badge>
                 <Badge version='pink'>Mobile Game</Badge>
@@ -134,17 +134,17 @@ function About() {
             <div>Things I'm interested in</div>
             
           </div>
-          <div className="collapse-content"> 
-            <div className="space-y-5">
-              <div className="my-4 flex space-x-5">
+          <div className="collapse-content w-full flex space-x-5 sm:flex-col sm:space-x-0 sm:-space-y-4"> 
+            <div className="space-y-5 w-full">
+              <div className="my-4 flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
                 <Badge version='purple'>Food</Badge>
                 <Badge version='pink'>Makeup</Badge>
                 <Badge version='purple'>Minimalism</Badge>
                 <Badge version='pink'>Art</Badge>
               </div>
             </div>
-            <div className="space-y-5">
-              <div className="my-4 flex space-x-5">
+            <div className="space-y-5 w-full">
+              <div className="my-4 flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5 ">
                 <Badge version='pink'>Anime</Badge>
                 <Badge version='purple'>Kpop</Badge>
                 <Badge version='pink'>Dogs && Cats</Badge>
@@ -156,9 +156,9 @@ function About() {
 
         </div>
 
-        <div className={`${darkMode === true ? 'text-white' : 'text-neutral'} mt-40 relative text-center flex flex-col  justify-right order-1 xl:order-2 xl:text-right z-20 xl:mt-0`}>
+        <div className={`${darkMode === true ? 'text-white' : 'text-neutral'} mt-10 relative text-center flex flex-col  justify-right order-1 xl:order-2 xl:text-right z-20 sm:mt-40 xl:mt-0`}>
           <h2 className='text-3xl uppercase font-black'>other details</h2>
-          <p>These are more stuff about me unrelated to tech</p>
+          <p className="text-sm sm:text-lg">These are more stuff about me unrelated to tech</p>
         </div>
       </div>
     </section>
