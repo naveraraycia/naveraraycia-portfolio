@@ -11,18 +11,18 @@ function NotFound() {
       <div className="space-y-5 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center text-center items-center  md:-space-y-3">
           <h3 className='font-black text-3xl md:text-4xl'>404</h3>
-          <h1 className="text-4xl font-black text-transparent bg-clip-text w-fit bg-gradient-to-r from-secondary to-primary md:leading-relaxed md:text-6xl">Page Not Found!</h1>
+          <h1 className="text-3xl font-black text-transparent bg-clip-text w-fit bg-gradient-to-r from-secondary to-primary md:leading-relaxed sm:text-4xl md:text-6xl">Page Not Found!</h1>
         </div> 
 
-        <p className="text-md text-center max-w-xs md:max-w-[400px] md:text-xl">Looks like the page you are looking for does not exist.</p>
+        <p className="text-sm text-center max-w-xs md:max-w-[400px] md:text-xl">Looks like the page you are looking for does not exist.</p>
 
         <Link to={'/'}>
           <Button version={'purple'}>Take me back</Button> 
         </Link>
       </div>
 
-      <div className="absolute bottom-10 font-semibold flex flex-col items-center justify-center">
-        <p>Designed and developed by Raycia Navera</p>
+      <div className="absolute bottom-10 font-semibold flex flex-col text-center items-center justify-center">
+        <p className="text-xs sm:text-sm">Designed and developed by Raycia Navera</p>
         <p className="text-sm">Copyright &copy; {yearToday}</p>
       </div>
     </div>
