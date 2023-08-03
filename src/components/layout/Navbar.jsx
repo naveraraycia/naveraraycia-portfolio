@@ -21,10 +21,9 @@ function Navbar() {
     sectionToScroll.scrollIntoView({behavior: 'smooth'})
   }
   return (
-    // <div data-aos='fade-down' data-aos-delay='100'>
     <>
     <nav className={`font-sans flex justify-between items-center px-5 py-10 md:px-32 lg:space-x-10 ${darkMode === false ? 'text-neutral' : 'text-white'}`}>
-      <div data-aos='zoom-in' data-aos-delay='50' className="hidden lg:block">
+      <div className="hidden lg:block">
         <Button>resume</Button> 
       </div>
       <ul className="hidden space-x-10 text-sm font-extralight lg:flex">

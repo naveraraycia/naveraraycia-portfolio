@@ -58,10 +58,10 @@ function Courses() {
   };
 
   return (
-    <section id="courses" className={`relative ${darkMode === true ? 'dark-course text-white' : 'light-course text-neutral'} duration-300`}>
+    <section  id="courses" className={`relative ${darkMode === true ? 'dark-course text-white' : 'light-course text-neutral'} duration-300`}>
       <div className={`h-[250px] duration-300 absolute top-0 left-0 w-full bg-gradient-to-b ${darkMode === true ? 'from-base-100' : 'from-light-base-100'}`}></div>
 
-      <div className={`px-5 pb-10 h-fit relative z-20 duration-300 sm:pb-60 lg:h-[900px] xl:h-[750px] sm:pt-40 md:px-32`}>
+      <div data-aos='fade-up' data-aos-delay='200' className={`px-5 pb-10 h-fit relative z-20 duration-300 sm:pb-60 lg:h-[900px] xl:h-[750px] sm:pt-40 md:px-32`}>
         <div className="space-y-10 sm:space-y-16">
           <div className="space-y-3 w-full flex flex-col items-center justify-center text-center">
             <h2 className="font-black text-xl max-w-[450px] sm:text-3xl">Completed Online Courses & Seminars Attended</h2>

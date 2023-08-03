@@ -14,7 +14,7 @@ function SkillSet() {
   const {darkMode} = useContext(AppContext)
   return (
     <section id="skillSet" className={`duration-300 ${darkMode === true ? 'dark-skill-set' : 'light-skill-set'}`}>
-      <div className="px-5 pt-24 space-y-32 mb-28 md:px-32">
+      <div data-aos='fade-up' data-aos-delay='200' className="px-5 pt-10 space-y-32 mb-28 md:px-32 xl:pt-40">
         <div className="space-y-10">
           <div className="space-y-3">
             <Heading version='purple' number='02' title='Skill Set.' />
@@ -22,79 +22,100 @@ function SkillSet() {
           </div>
 
           <div className="grid gap-6 justify-items-center grid-rows-4 grid-cols-2 xs:grid-rows-3 md:grid-rows-2 lg:grid-cols-4 xl:grid-cols-6">
-            <Card>
-              <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
-                <FaHtml5 size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
-                <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>HTML5</h5>
-              </div>
-            </Card>
-            <Card>
-              <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
-                <FaCss3Alt size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
-                <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>CSS3</h5>
-              </div>
-            </Card>
-            <Card>
-              <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
-                <FaJs size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
-                <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Javascript</h5>
-              </div>
-            </Card>
+            <div className="w-full">
+              <Card>
+                <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
+                  <FaHtml5 size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
+                  <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>HTML5</h5>
+                </div>
+              </Card>
+            </div>
+            <div className="w-full">
+              <Card>
+                <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
+                  <FaCss3Alt size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
+                  <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>CSS3</h5>
+                </div>
+              </Card>
+            </div>
+            <div className="w-full">
+              <Card>
+                <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
+                  <FaJs size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
+                  <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Javascript</h5>
+                </div>
+              </Card>
+            </div>
+            <div className="w-full">
             <Card>
               <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                 <FaReact size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
                 <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>React JS</h5>
               </div>
             </Card>
+            </div>
+            <div className="w-full">
             <Card>
               <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                 <BiLogoRedux size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
                 <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Redux</h5>
               </div>
             </Card>
-
+            </div>
+            <div className="w-full">
             <Card>
               <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                 <BiLogoFirebase size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
                 <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Firebase</h5>
               </div>
             </Card>
+            </div>
+            <div className="w-full">
             <Card>
               <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                 <BiLogoTailwindCss size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
                 <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Tailwind CSS</h5>
               </div>
             </Card>
+            </div>
+            <div className="w-full">
             <Card>
               <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                 <FaBootstrap size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
                 <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Bootstrap 4</h5>
               </div>
             </Card>
+            </div>
+            <div className="w-full">
             <Card>
               <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                 <DiMaterializecss size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
                 <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Materialize CSS</h5>
               </div>
             </Card>
+            </div>
+            <div className="w-full">
             <Card>
               <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                 <FiFigma size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
                 <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Figma</h5>
               </div>
             </Card>
+            </div>
+            <div className="w-full">
             <Card>
               <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                 <FaGitAlt size={40} className={`${darkMode === true ? 'text-secondary' : 'text-primary'}`} />
                 <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Git</h5>
               </div>
             </Card>
+            </div>
           </div>
 
 
         </div>
 
-        <div className="space-y-10 w-full flex flex-col text-center justify-center items-center">
+        <div data-aos='fade-up' data-aos-delay='400' className="space-y-10 w-full flex flex-col text-center justify-center items-center">
           <div className={`space-y-2 ${darkMode === true ? 'text-white' : 'text-neutral'}`}>
             <h1 className="font-black uppercase text-4xl">other</h1>
             <p className="text-sm max-w-lg sm:text-lg">These are technologies I’ve previously worked with and learned from the university.</p>
