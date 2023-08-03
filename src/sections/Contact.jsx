@@ -1,7 +1,6 @@
 import { useContext } from "react"
 import AppContext from "../context/AppContext"
 import Heading from "../components/Heading"
-import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import ContactForm from "../components/ContactForm";
 

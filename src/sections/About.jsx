@@ -20,7 +20,7 @@ function About() {
     <section className={`overflow-x-hidden px-5 pt-0 pb-32 space-y-20 ${darkMode === true ? 'bg-base-100' : 'bg-light-base-100'} duration-300 xl:space-y-96 sm:pb-60 sm:pt-40 md:px-32`}>
       <div id="about" className={`flex flex-col items-center space-y-14 ${darkMode === true ? 'text-white' : 'text-neutral'} md:space-y-32 xl:flex-row xl:items-left`}>
         {/* photos */}
-        <div className="flex flex-col space-y-5 w-full justify-center items-center sm:flex-row sm:space-x-5 sm:space-y-0 sm:w-fit translate-x-0 md:translate-x-10 xl:translate-x-0">
+        <div data-aos='fade-up' data-aos-delay='100' className="flex flex-col space-y-5 w-full justify-center items-center sm:flex-row sm:space-x-5 sm:space-y-0 sm:w-fit translate-x-0 md:translate-x-10 xl:translate-x-0">
           <div className="z-40 duration-500 md:hover:z-50 md:hover:scale-110 md:w-fit md:flex-none">
             <Window version='purple'>
               <img src={gradPic} alt="Gradaution Photo" className="hidden h-[300px] w-full md:w-[280px] md:h-[340px] object-cover md:block xl:w-full" />
@@ -46,14 +46,14 @@ function About() {
               <div className={`absolute w-[400px] bottom-5 left-60 blur-3xl h-[400px] rounded-full ${darkMode === true ? 'bg-[#F857E7]' : 'bg-[#FEBEFF]'}`}></div>
           </div>
           
-          <div className="relative">
+          <div data-aos='fade-up' data-aos-delay='200' className="relative">
             <Heading version='purple' number='01' title='About.' />
           </div>
 
           <div className="z-50 relative space-y-14 max-w-[700px] text-sm">
-            <p>Hi! My name is <span className={`font-bold ${darkMode === true ? 'text-secondary' : 'text-primary'}`}>Raycia</span> and I find joy in programming and all things web, specially front-end web development. My interest in overall computer programming started way back in 2017 when I first had my HTML class during my senior years in high school. It has always fascinated me every time my program worked as intended and whenever I am able to transform web designs into a fully functioning website. It gave me a strong sense of satisfaction. This is part of the reason why I took the degree I completed. I’ve encountered lots of programming languages throughout my university years, but I found web development the most interesting and fun. I am a person who appreciates and loves creating art aside from all the tech stuff, which is why web design and development seemed more like a fun activity to me rather than a work.</p>
+            <p data-aos='fade-up' data-aos-delay='400'>Hi! My name is <span className={`font-bold ${darkMode === true ? 'text-secondary' : 'text-primary'}`}>Raycia</span> and I find joy in programming and all things web, specially front-end web development. My interest in overall computer programming started way back in 2017 when I first had my HTML class during my senior years in high school. It has always fascinated me every time my program worked as intended and whenever I am able to transform web designs into a fully functioning website. It gave me a strong sense of satisfaction. This is part of the reason why I took the degree I completed. I’ve encountered lots of programming languages throughout my university years, but I found web development the most interesting and fun. I am a person who appreciates and loves creating art aside from all the tech stuff, which is why web design and development seemed more like a fun activity to me rather than a work.</p>
 
-            <p>From creating websites using plain old HTML and CSS with the use of notepad++ as my code editor before, now I can create full-stack projects using the latest technologies due to my years of learning in college as well as my hard work in self-studying Udemy courses (because I believe that learning and growth shall never stop!).</p>
+            <p data-aos='fade-up' data-aos-delay='600'>From creating websites using plain old HTML and CSS with the use of notepad++ as my code editor before, now I can create full-stack projects using the latest technologies due to my years of learning in college as well as my hard work in self-studying Udemy courses (because I believe that learning and growth shall never stop!).</p>
           </div>
 
         </div>
@@ -68,16 +68,16 @@ function About() {
           </div>
           
           <div className={`z-50 text-sm relative space-y-14 max-w-[700px] ${darkMode === true ? 'text-white' : 'text-neutral'}`}>
-            <p>Fast-forward to today, I am a <span className="font-bold">fresh graduate with a degree</span> in <span className={`${darkMode === true ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Computer Engineering who majored in Software Engineering</span>. I primarily focus on web development, particularly front-end but as mentioned above, I have also done some full-stack projects.</p>
+            <p data-aos='fade-up' data-aos-delay='800'>Fast-forward to today, I am a <span className="font-bold">fresh graduate with a degree</span> in <span className={`${darkMode === true ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Computer Engineering who majored in Software Engineering</span>. I primarily focus on web development, particularly front-end but as mentioned above, I have also done some full-stack projects.</p>
 
-            <p>In terms of work, I am <span className={`font-bold ${darkMode === true ? 'text-[#FF74C3]' : 'text-primary'}`}>willing to be trained</span> and am open to consistently learn and keep up with the latest in the industry as I am fully aware that this will extend my knowledge further and develop my pre existing skills, which in return would make me a remarkable asset to a company or team and an overall great developer.</p>
+            <p data-aos='fade-up' data-aos-delay='1000'>In terms of work, I am <span className={`font-bold ${darkMode === true ? 'text-[#FF74C3]' : 'text-primary'}`}>willing to be trained</span> and am open to consistently learn and keep up with the latest in the industry as I am fully aware that this will extend my knowledge further and develop my pre existing skills, which in return would make me a remarkable asset to a company or team and an overall great developer.</p>
 
-            <p><span className="font-bold">I look forward into joining a company that will help me grow</span> and collaborate with a supportive team whom I could also learn from.</p>
+            <p data-aos='fade-up' data-aos-delay='1200'><span className="font-bold">I look forward into joining a company that will help me grow</span> and collaborate with a supportive team whom I could also learn from.</p>
           </div>
         </div>
 
         {/* Personal Details */}
-        <div className="space-y-10 relative z-20 w-full max-w-[700px] xl:w-fit">
+        <div data-aos='fade-up' data-aos-delay='1400' className="space-y-10 relative z-20 w-full max-w-[700px] xl:w-fit">
           <div className="space-y-3 text-md">
             <p><span className={`${darkMode === true ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Name:</span> Raycia Maria Frances R. Navera</p>
             <p><span className={`${darkMode === true ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Birthdate:</span> 04 November 1999</p>

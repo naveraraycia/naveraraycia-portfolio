@@ -16,12 +16,12 @@ import Spinner from "./components/Spinner";
 function App() {
   const {loading, dispatch} = useContext(AppContext)
 
-  useEffect(()=>{
-    dispatch({type: 'SET_LOADING'})
-    setTimeout(()=>{
-      dispatch({type: 'REMOVE_LOADING'})
-    },1500)
-  }, [dispatch])
+  // useEffect(()=>{
+  //   dispatch({type: 'SET_LOADING'})
+  //   setTimeout(()=>{
+  //     dispatch({type: 'REMOVE_LOADING'})
+  //   },1500)
+  // }, [dispatch])
 
   if(loading){
     return <Spinner />

@@ -13,29 +13,29 @@ function FixedLinks() {
     <div className={`hidden relative z-50 md:flex`}>
       <div id="fixedLinks" className="fixed bottom-52 right-10">
         <ul className="space-y-8">
-          <li onClick={()=> dispatch({type: 'TOGGLE_MODE', payload: !darkMode})}>
+          <li data-aos='fade-up' data-aos-delay='2100' onClick={()=> dispatch({type: 'TOGGLE_MODE', payload: !darkMode})}>
             {darkMode === true ? (
               <PiSunBold size={30} className={`${darkMode === true && 'text-white hover:text-secondary'} hover:cursor-pointer`}/>
               ) : (
               <FiMoon size={30} className={`${darkMode === false && 'text-neutral hover:text-primary'} hover:cursor-pointer`}/>
             )}
           </li>
-          <li>
+          <li data-aos='fade-up' data-aos-delay='2000'>
             <a href="https://github.com/naveraraycia" target="_blank">
               <AiFillGithub size={30} className={`${darkMode === true ? 'text-white hover:text-secondary' : 'text-neutral hover:text-primary'} hover:cursor-pointer`} />
             </a>
           </li>
-          <li>
+          <li data-aos='fade-up' data-aos-delay='1900'>
             <a href="https://www.instagram.com/imraycie" target="_blank">
               <AiOutlineInstagram size={30} className={`${darkMode === true ? 'text-white hover:text-secondary' : 'text-neutral hover:text-primary'} hover:cursor-pointer`} />
             </a>
           </li>
-          <li>
+          <li data-aos='fade-up' data-aos-delay='1800'>
             <a href="https://www.facebook.com/raynicornn" target="_blank">
               <FiFacebook size={30} className={`${darkMode === true ? 'text-white hover:text-secondary' : 'text-neutral hover:text-primary'} hover:cursor-pointer`} />
             </a>
           </li>
-          <li>
+          <li data-aos='fade-up' data-aos-delay='1700'>
             <a href="https://www.linkedin.com/in/naveraraycia" target="_blank">
               <AiOutlineLinkedin size={30} className={`${darkMode === true ? 'text-white hover:text-secondary' : 'text-neutral hover:text-primary'} hover:cursor-pointer`} />
             </a>
