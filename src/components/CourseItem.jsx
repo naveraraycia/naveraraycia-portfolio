@@ -9,7 +9,7 @@ function CourseItem({img, dateCompleted, instructor, number}) {
       <div className="space-y-5">
         <div className="relative">
           <img src={img} alt="Certificate" className="w-[500px] object-cover rounded-[20px]" />
-          <a href={img} target={"_blank"} className="absolute right-0 bottom-3 scale-75 btn btn-primary text-xs py-2 px-4 text-white font-extrabold hover:bg-primary hover:scale-90 duration-300 sm:px-10 md:right-2 md:bottom-5">view</a>
+          <a href={img} rel="noreferrer" target="_blank" className="absolute right-0 bottom-3 scale-75 btn btn-primary text-xs py-2 px-4 text-white font-extrabold hover:bg-primary hover:scale-90 sm:px-10 md:right-2 md:bottom-5">view</a>
         </div>
 
         <div className="flex items-center mx-3 justify-between md:mx-0">
@@ -26,10 +26,7 @@ function CourseItem({img, dateCompleted, instructor, number}) {
 
           <div className={`py-2 px-4 rounded-full ${darkMode ? 'bg-neutral' : 'bg-primary'} text-white font-extrabold text-sm md:text-xl`}>{number}</div>
         </div>
-
-
-      </div>
-      
+      </div>  
     </div>
   )
 }

@@ -58,8 +58,8 @@ function Courses() {
   };
 
   return (
-    <section  id="courses" className={`relative ${darkMode === true ? 'dark-course text-white' : 'light-course text-neutral'} duration-300`}>
-      <div className={`h-[250px] duration-300 absolute top-0 left-0 w-full bg-gradient-to-b ${darkMode === true ? 'from-base-100' : 'from-light-base-100'}`}></div>
+    <section  id="courses" className={`relative ${darkMode ? 'dark-course text-white' : 'light-course text-neutral'} duration-300`}>
+      <div className={`h-[250px] duration-300 absolute top-0 left-0 w-full bg-gradient-to-b ${darkMode ? 'from-base-100' : 'from-light-base-100'}`}></div>
 
       <div data-aos='fade-up' data-aos-delay='200' className={`px-5 pb-10 h-fit relative z-20 duration-300 sm:pb-60 lg:h-[900px] xl:h-[750px] sm:pt-40 md:px-32`}>
         <div className="space-y-10 sm:space-y-16">
@@ -68,7 +68,6 @@ function Courses() {
             <p className="max-w-[670px] text-sm sm:text-lg">Here are the online courses I took and university seminars that expanded my knowledge in Web Development, Frontend, and overall tech.</p>
           </div>
 
-          {/* Slider */}
           <div className="px-5">
             <Slider {...settings}>
               <CourseItem img={ReactCertif} dateCompleted={'Dec 4 2022'} instructor={'Brad Traversy'} number={'01'}  />
@@ -86,17 +85,12 @@ function Courses() {
               <CourseItem img={AccentureCertif1} dateCompleted={'Apr 22 2022'} instructor={'Accenture'} number={'13'}  />
               <CourseItem img={AccentureCertif2} dateCompleted={'May 20 2022'} instructor={'Accenture'} number={'14'}  />
               <CourseItem img={vrCertif} dateCompleted={'May 11 2022'} instructor={'Jan Yolec Homecillo'} number={'15'}  />
-
             </Slider>
-
           </div>
         </div>
-
       </div>
       
-      <div className={`h-[200px] duration-300 w-full bg-gradient-to-t ${darkMode === true ? 'from-base-100' : 'from-light-base-100'}`}></div>
-      
-
+      <div className={`h-[200px] duration-300 w-full bg-gradient-to-t ${darkMode ? 'from-base-100' : 'from-light-base-100'}`}></div>
     </section>
   )
 }

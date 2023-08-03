@@ -18,7 +18,7 @@ function App() {
 
   useEffect(()=>{
     dispatch({type: 'SET_LOADING'})
-    setTimeout(()=>{
+    setTimeout(() => {
       dispatch({type: 'REMOVE_LOADING'})
     },1500)
   }, [dispatch])

@@ -1,11 +1,12 @@
 import { useContext } from "react"
+import { Link } from "react-router-dom"
 import AppContext from "../context/AppContext"
 import Button from "../components/Button"
-import { Link } from "react-router-dom"
 
 function NotFound() {
   const {darkMode} = useContext(AppContext)
   const yearToday = new Date().getFullYear()
+  
   return (
     <div className={`h-screen p-5 flex flex-col space-y-10 justify-center items-center w-full ${darkMode ? 'bg-base-100 text-white' : 'text-neutral bg-light-base-100'}`}>
       <div className="space-y-5 flex flex-col justify-center items-center">

@@ -32,21 +32,19 @@ function ProjectItem({img, title, description, figma, url, isViewDarkColor, stac
                 ))}
             </ul>
           </div>
-
         </div>
 
         <div className="space-y-2 flex flex-col sm:flex-row sm:space-y-0 sm:space-x-5">
-            <a target="_blank" rel="noreferrer" href={url}>
-              <Button>Visit</Button>
+          <a target="_blank" rel="noreferrer" href={url}>
+            <Button>Visit</Button>
+          </a>
+          {figma !== null && (
+            <a target="_blank" rel="noreferrer" href={figma}>
+              <Button version="light-btn">Figma</Button>
             </a>
-            {figma !== null && (
-              <a target="_blank" rel="noreferrer" href={figma}>
-                <Button version="light-btn">Figma</Button>
-              </a>
-            )}
-          </div>
+          )}
+        </div>
       </div>
-    
     </div>
   )
 }

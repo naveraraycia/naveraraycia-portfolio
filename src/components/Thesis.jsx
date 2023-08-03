@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import { thesis } from '../projectDetails/projectInformation'
 import AppContext from "../context/AppContext";
+import { thesis } from '../projectDetails/projectInformation'
 import Slider from "react-slick";
 
 function Thesis() {
@@ -24,6 +24,7 @@ function Thesis() {
       }
     ]
   };
+
   return (
     <div className="space-y-24 duration-300">
       <div className="px-5">
@@ -63,11 +64,10 @@ function Thesis() {
         </div>
 
         <ul className={`flex flex-wrap text-xs sm:text-sm font-semibold ${darkMode ? 'text-[#61A1FF]' : 'text-primary'}`}>
-              {thesis.stack.map((stackItem, index) => (
-                <li key={index} className="mr-5">{stackItem}</li>
-                ))}
-            </ul>
-       
+          {thesis.stack.map((stackItem, index) => (
+            <li key={index} className="mr-5">{stackItem}</li>
+          ))}
+        </ul>
       </div>
     </div>
   )
