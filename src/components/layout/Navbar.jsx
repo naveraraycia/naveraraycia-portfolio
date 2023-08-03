@@ -22,36 +22,38 @@ function Navbar() {
   }
   return (
     <>
-    <nav className={`font-sans flex justify-between items-center px-5 py-10 md:px-32 lg:space-x-10 ${darkMode === false ? 'text-neutral' : 'text-white'}`}>
-      <div className="hidden lg:block">
-        <Button>resume</Button> 
-      </div>
-      <ul className="hidden space-x-10 text-sm font-extralight lg:flex">
-        <li onClick={() => handleClickScroll('home')} className="font-extrabold">Home</li>
-        <li onClick={() => handleClickScroll('about')}>About Me</li>
-        <li onClick={() => handleClickScroll('skillSet')}>Skill Set</li>
-        <li onClick={() => handleClickScroll('education')}>Education</li>
-        <li onClick={() => handleClickScroll('portfolio')}>Portfolio</li>
-        <li onClick={() => handleClickScroll('contact')}>Contact</li>
-      </ul>
-
-      <div className="text-3xl font-black z-20">ray.</div>
-
-      {/* Hamburger icon */}
-      <div className="lg:hidden relative">
-        <div className="absolute right-12 bottom-[3px] md:hidden" onClick={()=> dispatch({type: 'TOGGLE_MODE', payload: !darkMode})}>
-            {darkMode === true ? (
-              <PiSunBold size={24} className={`${darkMode === true && 'text-white hover:text-secondary'} hover:cursor-pointer`}/>
-              ) : (
-              <FiMoon size={24} className={`${darkMode === false && 'text-neutral hover:text-primary'} hover:cursor-pointer`}/>
-            )}
+    <nav className={`font-sans px-5 py-10 md:px-32 ${darkMode === false ? 'text-neutral' : 'text-white'}`}>
+      <div data-aos='fade-down' data-aos-delay='50' className="flex justify-between items-center lg:space-x-10">
+        <div className="hidden lg:block">
+          <Button>resume</Button> 
         </div>
+        <ul className="hidden space-x-10 text-sm font-extralight lg:flex">
+          <li onClick={() => handleClickScroll('home')} className="font-extrabold">Home</li>
+          <li onClick={() => handleClickScroll('about')}>About Me</li>
+          <li onClick={() => handleClickScroll('skillSet')}>Skill Set</li>
+          <li onClick={() => handleClickScroll('education')}>Education</li>
+          <li onClick={() => handleClickScroll('portfolio')}>Portfolio</li>
+          <li onClick={() => handleClickScroll('contact')}>Contact</li>
+        </ul>
 
-        <button id="menu-btn" onClick={toggleMenu} type="button" className="z-[100] block hamburger lg:hidden focus:outline-none">
-          <span className={`hamburger-top ${darkMode === true ? 'bg-white' : 'bg-neutral'}`}></span>
-          <span className={`hamburger-middle ${darkMode === true ? 'bg-white' : 'bg-neutral'}`}></span>
-          <span className={`hamburger-bottom ${darkMode === true ? 'bg-white' : 'bg-neutral'}`}></span>
-        </button>
+        <div className="text-3xl font-black z-20">ray.</div>
+
+        {/* Hamburger icon */}
+        <div className="lg:hidden relative">
+          <div className="absolute right-12 bottom-[3px] md:hidden" onClick={()=> dispatch({type: 'TOGGLE_MODE', payload: !darkMode})}>
+              {darkMode === true ? (
+                <PiSunBold size={24} className={`${darkMode === true && 'text-white hover:text-secondary'} hover:cursor-pointer`}/>
+                ) : (
+                <FiMoon size={24} className={`${darkMode === false && 'text-neutral hover:text-primary'} hover:cursor-pointer`}/>
+              )}
+          </div>
+
+          <button id="menu-btn" onClick={toggleMenu} type="button" className="z-[100] block hamburger lg:hidden focus:outline-none">
+            <span className={`hamburger-top ${darkMode === true ? 'bg-white' : 'bg-neutral'}`}></span>
+            <span className={`hamburger-middle ${darkMode === true ? 'bg-white' : 'bg-neutral'}`}></span>
+            <span className={`hamburger-bottom ${darkMode === true ? 'bg-white' : 'bg-neutral'}`}></span>
+          </button>
+        </div>
       </div>
     </nav>
 

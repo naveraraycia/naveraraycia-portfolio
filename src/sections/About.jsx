@@ -13,9 +13,9 @@ function About() {
   const {darkMode} = useContext(AppContext)
   function handleClickScroll(idName){
     const sectionToScroll = document.getElementById(`${idName}`)
-
     sectionToScroll.scrollIntoView({behavior: 'smooth'})
   }
+  
   return (
     <section className={`overflow-x-hidden px-5 pb-32 space-y-10 ${darkMode === true ? 'bg-base-100' : 'bg-light-base-100'} duration-300 sm:pt-5 md:px-32 xl:space-y-32`}>
       <div data-aos='fade-up' data-aos-delay='200' className="relative z-20">
