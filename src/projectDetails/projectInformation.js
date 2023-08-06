@@ -88,7 +88,7 @@ export const personalProject = [
 
 export const internship = {
   title: 'MTL Holdings',
-  description: 'Part of our internship in college is producing a product for a company. I created a web design and website for the company my sister used to work for. It shows details regarding what each company is all about as well as clients, location, and contact information.',
+  description: 'Part of our internship in college is producing a product for a company. I created a prototype web design and website for the company my sister used to work for. It shows details regarding what each company is all about including the corporate statement, services, clients, location, and contact information.',
   img: Mtl,
   darkView: true,
   figma: 'https://www.figma.com/file/bEh8MGClIKjf1w9KPcF8GV/MTL-Group-of-Companies-Project-High-Fidelity-Layout-NAVERA-CPE41?type=design&node-id=344%3A43&mode=design&t=2fN0aaJTKBmTFqLm-1',
