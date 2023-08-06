@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react"
 import AppContext from '../context/AppContext'
 import Navbar from "../components/layout/Navbar"
 import Button from "../components/Button"
+import resumePDF from "../assets/resume/Navera-Raycia-Resume.pdf"
 import AOS from "aos"
 import 'aos/dist/aos.css'
 
@@ -38,9 +39,15 @@ function Home() {
 
               <p data-aos='fade-right' data-aos-delay='1100' className="leading-loose text-sm max-w-xl sm:text-lg">An aspiring web developer who finds satisfaction and joy in transforming web ideas into reality through design, code, and implementation.</p>
             </div>
-            
-            <div data-aos='fade-right' data-aos-delay='1300' onClick={() => handleClickScroll('about')} className="w-fit">
+
+            <div data-aos='fade-right' data-aos-delay='1300' onClick={() => handleClickScroll('about')} className="w-fit hidden lg:block">
               <Button>get to know me</Button>
+            </div>
+
+            <div>
+              <a rel="noreferrer" target="_blank" href={resumePDF} className="lg:hidden">
+                <Button>resume</Button> 
+              </a>
             </div>
           </div>
         </div>

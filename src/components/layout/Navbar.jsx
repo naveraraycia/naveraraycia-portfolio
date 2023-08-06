@@ -3,6 +3,7 @@ import AppContext from "../../context/AppContext"
 import Button from "../Button"
 import { FiMoon } from 'react-icons/fi'
 import { PiSunBold } from "react-icons/pi";
+import resumePDF from '../../assets/resume/Navera-Raycia-Resume.pdf'
 
 function Navbar() {
   const {darkMode, dispatch} = useContext(AppContext)
@@ -26,7 +27,9 @@ function Navbar() {
     <nav className={`font-sans px-5 py-10 md:px-32 ${!darkMode ? 'text-neutral' : 'text-white'}`}>
       <div data-aos='fade-down' data-aos-delay='50' className="flex justify-between items-center lg:space-x-10">
         <div className="hidden lg:block">
-          <Button>resume</Button> 
+          <a rel="noreferrer" target="_blank" href={resumePDF}>
+            <Button>resume</Button> 
+          </a>
         </div>
         <ul className="hidden space-x-10 text-sm font-extralight lg:flex">
           <li onClick={() => handleClickScroll('home')} className="font-extrabold">Home</li>
