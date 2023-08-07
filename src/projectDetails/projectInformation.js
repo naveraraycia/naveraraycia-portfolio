@@ -80,7 +80,7 @@ export const personalProject = [
     description: 'This is a money budgeting web application I created for myself. It allows me to create multiple lists that aim to track my income, expenses, and total balance per month. What I made unique about this web application compared to other finance trackers is the feature where it asks how much percentage I would like to save from my total income. From this, I get the exact amount I am able to spend for the month, which helps more in visualizing the overall budget. Other features I developed include fetching the real-time currency conversion of USD to PHP from an external API, and a wish list. I created this web app for the sake of familiarizing myself with the JavaScript Module pattern and Constructors as well as trying out the Neumorphism design.',
     img: Budgeteer,
     darkView: true,
-    figma: 'https://www.figma.com/file/neRTUMQsx8xBKWCHr4154Q/budget-buddy-2.0?type=design&mode=design&t=qpT87XLr9gukHJfp-1',
+    figma: 'https://www.figma.com/file/neRTUMQsx8xBKWCHr4154Q/Budgeteer-2.0?type=design&mode=design&t=RrP4q092Jd54T0Iw-0',
     url: 'https://naveraraycia.github.io/Budgeteer/',
     stack: ['HTML', 'Tailwind CSS', 'Vanilla JavaScript', 'Module Pattern', 'Constructors']
   }
