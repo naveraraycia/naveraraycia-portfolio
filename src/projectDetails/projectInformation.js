@@ -41,7 +41,7 @@ export const personalProject = [
   },
   {
     title: 'Aesthetica',
-    description: 'A static website I created for a pretend architectural firm company. It showcases the architectural projects and designs by the company, the team, and the client engagements.',
+    description: 'A static architectural firm website UI I created that showcases the architectural projects and designs by the company, the team, and the client engagements.',
     img: Aesthetica,
     darkView: false,
     figma: 'https://www.figma.com/file/0G8IbM76KkQAzfljJKf8Ik/Aesthetica---Housing-architecture-firm?type=design&node-id=0%3A1&mode=design&t=qpT87XLr9gukHJfp-1',
@@ -50,7 +50,7 @@ export const personalProject = [
   },
   {
     title: 'CremeBrew',
-    description: 'A static website I built for a pretend café. It shows details regarding the shop, their menu, gallery, location, and contact information.',
+    description: 'A static coffee shop website UI I created that shows details regarding the shop, their menu, gallery, location, and contact information.',
     img: CremeBrew,
     darkView: false,
     figma: 'https://www.figma.com/file/jq7nSYvaco7H0vvYjDqued/CremeBrew---coffee-shop-website?type=design&mode=design&t=qpT87XLr9gukHJfp-1',
