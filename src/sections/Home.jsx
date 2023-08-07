@@ -44,8 +44,8 @@ function Home() {
               <Button>get to know me</Button>
             </div>
 
-            <div>
-              <a rel="noreferrer" target="_blank" href={resumePDF} className="lg:hidden">
+            <div data-aos='fade-right' data-aos-delay='1300' className="lg:hidden">
+              <a rel="noreferrer" target="_blank" href={resumePDF}>
                 <Button>resume</Button> 
               </a>
             </div>
