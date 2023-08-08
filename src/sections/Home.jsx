@@ -37,7 +37,7 @@ function Home() {
                 <p data-aos='fade-right' data-aos-delay='900' className="text-neutral font-black text-4xl max-w-xl leading-tight sm:text-5xl lg:text-4xl xl:text-5xl">I bring web ideas to life.</p>
               </div>
 
-              <p data-aos='fade-right' data-aos-delay='1100' className="leading-loose text-sm max-w-xl sm:text-lg">An aspiring web developer who finds satisfaction and joy in transforming web ideas into reality through design, code, and implementation.</p>
+              <p data-aos='fade-right' data-aos-delay='1100' className="leading-loose text-sm max-w-xl sm:text-lg">A highly adaptive web developer who finds satisfaction and joy in transforming web ideas into reality through design, code, and implementation.</p>
             </div>
 
             <div data-aos='fade-right' data-aos-delay='1300' onClick={() => handleClickScroll('about')} className="w-fit hidden lg:block">
