@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <>
-    <nav className={`font-sans px-5 py-10 md:px-32 ${!darkMode ? 'text-neutral' : 'text-white'}`}>
+    <nav className={`container mx-auto font-sans px-5 py-10 ${!darkMode ? 'text-neutral' : 'text-white'}`}>
       <div data-aos='fade-down' data-aos-delay='50' className="flex justify-between items-center lg:space-x-10">
         <div className="hidden lg:block">
           <a rel="noreferrer" target="_blank" href={resumePDF}>

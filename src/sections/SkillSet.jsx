@@ -15,7 +15,7 @@ function SkillSet() {
 
   return (
     <section id="skillSet" className={`duration-300 ${darkMode ? 'dark-skill-set' : 'light-skill-set'}`}>
-      <div data-aos='fade-up' data-aos-delay='200' className="px-5 pt-10 space-y-32 mb-28 md:px-32 xl:pt-40">
+      <div data-aos='fade-up' data-aos-delay='200' className="container mx-auto px-5 pt-10 space-y-32 mb-28 xl:pt-40">
         <div className="space-y-10">
           <div className="space-y-3">
             <Heading version='purple' number='02' title='Skill Set.' />

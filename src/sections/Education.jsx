@@ -9,8 +9,8 @@ function Education() {
   const {darkMode} = useContext(AppContext)
 
   return (
-    <section className={`overflow-x-hidden px-5 pb-60 md:px-32 space-y-10 ${darkMode ? 'bg-base-100' : 'bg-light-base-100'} duration-300`}>
-      <div data-aos='fade-up' data-aos-delay='200'>
+    <section className={`overflow-x-hidden px-5 pb-60 space-y-10 ${darkMode ? 'bg-base-100' : 'bg-light-base-100'} duration-300`}>
+      <div data-aos='fade-up' data-aos-delay='200' className="container mx-auto">
         <div id="education" className={`flex flex-col items-center space-y-14 ${darkMode ? 'text-white' : 'text-neutral'} md:space-y-32 xl:flex-row xl:items-left justify-center`}>
           <div className="flex flex-col space-y-5 w-full justify-center items-center sm:flex-row sm:space-x-5 sm:space-y-0 sm:w-fit translate-x-0 md:translate-x-10 xl:translate-x-0">
             <div className="duration-500 md:hover:z-50 md:hover:scale-110 md:w-fit md:flex-none">

@@ -23,7 +23,7 @@ function Home() {
   return (
     <section id="home" className={`${!darkMode ? 'light-home' : 'dark-home'} font-sans duration-300`}>
       <Navbar />
-      <div className="flex flex-col items-center justify-center px-5 py-10 md:px-32 md:flex-row md:space-x-16">
+      <div className="flex flex-col container mx-auto items-center justify-between px-5 py-10 md:flex-row md:space-x-16">
         <div className={`${darkMode ? 'text-white' : 'text-neutral'} lg:w-1/2`}>
           <div className="space-y-10">
             <div className="space-y-3">

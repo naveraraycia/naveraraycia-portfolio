@@ -8,7 +8,7 @@ function ContactForm() {
   const [message, setMessage] = useState('')
 
   return (
-    <form className="space-y-5">
+    <form className="space-y-5 flex flex-col items-end">
       <input type="text" placeholder="Subject" onChange={(e) => setSubject(e.target.value)} value={subject} className={`input text-sm input-bordered bg-transparent border-2 ${darkMode ? 'input-secondary' : 'input-primary'} w-full sm:text-lg lg:max-w-[500px]`} />
     
       <textarea onChange={(e) => setMessage(e.target.value)} value={message} className={`textarea bg-transparent border-2 w-full h-[300px] max-h-[400px] ${darkMode ? 'textarea-secondary' : 'textarea-primary'} sm:text-lg lg:max-w-[500px]`} placeholder="Message"></textarea>
