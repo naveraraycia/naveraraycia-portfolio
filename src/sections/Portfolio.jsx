@@ -53,7 +53,9 @@ function Portfolio() {
             )}
           </div>
         ) : clicked === 2 ? 
-          <ProjectItem title={internship.title} badge={internship.badge} isViewDarkColor={internship.darkView} figma={internship.figma} url={internship.url} description={internship.description} img={internship.img} stack={internship.stack} />
+            <div className="w-full flex items-center justify-center">            
+              <ProjectItem title={internship.title} badge={internship.badge} isViewDarkColor={internship.darkView} figma={internship.figma} url={internship.url} description={internship.description} img={internship.img} stack={internship.stack} />
+            </div>
         : 
         <Thesis />}
       </div>

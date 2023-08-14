@@ -10,7 +10,7 @@ function Contact() {
   return (
     <section id="contact" className={`${darkMode ? 'text-white bg-base-100' : 'bg-light-base-100 text-neutral'} duration-300`}>
       <div data-aos='fade-up' data-aos-delay='400' className={`px-5 pb-10 md:px-32 space-y-20 duration-300`}>
-        <div className="flex flex-col space-y-10 lg:flex-row lg:space-y-0 lg:space-x-20 ">
+        <div className="flex flex-col justify-center items-center space-y-10 lg:flex-row lg:space-y-0 lg:space-x-20 ">
           <div className="space-y-5 md:space-y-10">
             <Heading version={'purple'} number={'05'} title={'Contact Me.'} />
 

@@ -19,7 +19,7 @@ function About() {
   
   return (
     <section className={`overflow-x-hidden px-5 pb-32 space-y-10 ${darkMode ? 'bg-base-100' : 'bg-light-base-100'} duration-300 sm:pt-5 md:px-32 xl:space-y-32`}>
-      <div data-aos='fade-up' data-aos-delay='200' className="relative z-20">
+      <div data-aos='fade-up' data-aos-delay='200' className="relative flex items-center justify-center z-20">
         <div id="about" className={`flex flex-col items-center space-y-14 ${darkMode ? 'text-white' : 'text-neutral'} md:space-y-32 xl:flex-row xl:items-left`}>
           <div className="flex relative z-10 flex-col space-y-5 w-full justify-center items-center sm:flex-row sm:space-x-5 sm:space-y-0 sm:w-fit translate-x-0 md:translate-x-10 xl:translate-x-0">
             <div className="z-40 duration-500 md:hover:z-50 md:hover:scale-110 md:w-fit md:flex-none">
@@ -58,7 +58,7 @@ function About() {
       </div>
 
       <div data-aos='fade-up' data-aos-delay='400' >
-        <div className={`flex flex-col items-center space-y-10 ${darkMode ? 'text-white' : 'text-neutral'} md:space-y-16 xl:flex-row xl:space-y-0 xl:space-x-40`}>
+        <div className={`flex flex-col items-center justify-center space-y-10 ${darkMode ? 'text-white' : 'text-neutral'} md:space-y-16 xl:flex-row xl:space-y-0 xl:space-x-40`}>
           <div className="relative w-full space-y-4 lg:w-fit">
             <div className={`${darkMode && 'opacity-60'}`}>
               <div className={`absolute w-[400px] h-[400px] top-10 blur-3xl left-24 rounded-full ${darkMode ? 'bg-[#6A25C7]' : 'bg-[#C4F7FC]'}`}></div>
