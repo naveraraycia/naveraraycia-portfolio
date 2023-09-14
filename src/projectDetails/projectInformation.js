@@ -1,10 +1,9 @@
 import Aesthetica from '../assets/projects/Aesthetica.png'
 import Chapters from '../assets/projects/Chapters.png'
 import Explora from '../assets/projects/Explora.png'
-import CremeBrew from '../assets/projects/Cremebrew.png'
-import Pawsitivity from '../assets/projects/Pawsitivity.png'
 import Fililingo from '../assets/projects/Fililingo.png'
 import Budgeteer from '../assets/projects/Budgeteer.png'
+import Candiy from '../assets/projects/candiy.png'
 import Mtl from '../assets/projects/MTL.jpg'
 import ts1 from '../assets/projects/thesis-imgs/index.png'
 import ts2 from '../assets/projects/thesis-imgs/home-user-login.png'
@@ -31,6 +30,15 @@ export const personalProject = [
     stack: ['React JS','Firebase','Tailwind CSS']
   },
   {
+    title: 'CanDiY',
+    description: 'CanDiY is a candy snacks subscription box static website UI that showcases details regarding the product, how the subscription package works, plan prices, and customer testimonials.',
+    img: Candiy,
+    darkView: true,
+    figma: 'https://www.figma.com/file/raBPnMccDVDWByD9wZdLeb/CanDiY---webpack-project?type=design&node-id=0%3A1&mode=design&t=3WYyauOB5aXApB0e-1',
+    url: 'https://candiy-nu.vercel.app/',
+    stack: ['HTML', 'CSS', 'JS', 'Bootstrap 5', 'SASS', 'Webpack', 'Babel']
+  },
+  {
     title: 'Chapters',
     description: 'A dynamic journal web application I created with authentication for privacy and journal entry safekeeping. Some other features of the web application include the display of random inspirational quotes and suggested tasks fetched from external APIs in case the user feels the need for motivation and idea on what to do for the day.',
     img: Chapters,
@@ -47,24 +55,6 @@ export const personalProject = [
     figma: 'https://www.figma.com/file/0G8IbM76KkQAzfljJKf8Ik/Aesthetica---Housing-architecture-firm?type=design&node-id=0%3A1&mode=design&t=qpT87XLr9gukHJfp-1',
     url: 'https://aesthetica.vercel.app/',
     stack: ['React JS', 'Bootstrap', 'SaSS']
-  },
-  {
-    title: 'CremeBrew',
-    description: 'A static coffee shop website UI I created that shows details regarding the shop, their menu, gallery, location, and contact information.',
-    img: CremeBrew,
-    darkView: false,
-    figma: 'https://www.figma.com/file/jq7nSYvaco7H0vvYjDqued/CremeBrew---coffee-shop-website?type=design&mode=design&t=qpT87XLr9gukHJfp-1',
-    url: 'https://cremebrew.vercel.app/',
-    stack: ['React JS', 'Bootstrap', 'SaSS']
-  },
-  {
-    title: 'Pawsitivity',
-    description: 'A static website I built that shows information about human and pet wellness available in 2 languages (English and Filipino). I created this website for the sake of learning and utilizing the React Context API and provider. I used the Context API for providing the English and Filipino translations for the page content.',
-    img: Pawsitivity,
-    darkView: true,
-    figma: 'https://www.figma.com/file/5HuXtQtQar70PEF2xIapMG/Pawsitivity---ReactJS-Project-Multi-language-project-(Context-API)?type=design&mode=design&t=qpT87XLr9gukHJfp-1',
-    url: 'https://pawsitivity.vercel.app/',
-    stack: ['React JS', 'Tailwind CSS', 'Context API']
   },
   {
     title: 'FiliLingo',
