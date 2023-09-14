@@ -17,6 +17,7 @@ import FigmaCertif from '../assets/certificates/Figma_UI_UX_Design_Essentials.jp
 import AccentureCertif1 from '../assets/certificates/Accenture-certificate-data-science-software-development_page-0001.jpg'
 import AccentureCertif2 from '../assets/certificates/Accenture-certificate-cloud-computing_page-0001.jpg'
 import vrCertif from '../assets/certificates/Virtual-reality_page-0001.jpg'
+import webpackCertif from '../assets/certificates/Webpack-5-in-2023-Optimizing-for-Production.jpg'
 
 
 function Courses() {
@@ -85,6 +86,7 @@ function Courses() {
               <CourseItem img={AccentureCertif1} dateCompleted={'Apr 22 2022'} instructor={'Accenture'} number={'13'}  />
               <CourseItem img={AccentureCertif2} dateCompleted={'May 20 2022'} instructor={'Accenture'} number={'14'}  />
               <CourseItem img={vrCertif} dateCompleted={'May 11 2022'} instructor={'Jan Yolec Homecillo'} number={'15'}  />
+              <CourseItem img={webpackCertif} dateCompleted={'Sep 4 2023'} instructor={'Viktor Pyskunov'} number={'16'}  />
             </Slider>
           </div>
         </div>
