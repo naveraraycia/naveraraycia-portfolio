@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react"
 import AppContext from '../context/AppContext'
 import Navbar from "../components/layout/Navbar"
 import Button from "../components/Button"
-import resumePDF from "../assets/resume/Navera-Raycia-Resume.pdf"
+import resumePDF from "../assets/resume/Raycia-Navera-Resume-Final.pdf"
 import AOS from "aos"
 import 'aos/dist/aos.css'
 

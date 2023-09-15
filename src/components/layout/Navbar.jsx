@@ -3,7 +3,7 @@ import AppContext from "../../context/AppContext"
 import Button from "../Button"
 import { FiMoon } from 'react-icons/fi'
 import { PiSunBold } from "react-icons/pi";
-import resumePDF from '../../assets/resume/Navera-Raycia-Resume.pdf'
+import resumePDF from '../../assets/resume/Raycia-Navera-Resume-Final.pdf'
 
 function Navbar() {
   const {darkMode, dispatch} = useContext(AppContext)
