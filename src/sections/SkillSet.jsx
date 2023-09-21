@@ -2,7 +2,7 @@ import { useContext } from "react"
 import AppContext from "../context/AppContext"
 import Heading from "../components/Heading"
 import Card from "../components/Card"
-import {FaHtml5, FaCss3Alt, FaJs, FaJava, FaReact, FaGitAlt, FaBootstrap, FaPython} from "react-icons/fa"
+import {FaHtml5, FaCss3Alt, FaJs, FaJava, FaReact, FaGitAlt, FaBootstrap, FaPython, FaSass} from "react-icons/fa"
 import { BiLogoFirebase, BiLogoTailwindCss, BiLogoRedux } from "react-icons/bi";
 import { DiMaterializecss } from "react-icons/di";
 import { FiFigma } from "react-icons/fi";
@@ -108,6 +108,14 @@ function SkillSet() {
                 <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                   <FaGitAlt size={40} className={`${darkMode ? 'text-secondary' : 'text-primary'}`} />
                   <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Git</h5>
+                </div>
+              </Card>
+            </div>
+            <div className="w-full">
+              <Card>
+                <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
+                  <FaSass size={40} className={`${darkMode ? 'text-secondary' : 'text-primary'}`} />
+                  <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>SASS</h5>
                 </div>
               </Card>
             </div>
