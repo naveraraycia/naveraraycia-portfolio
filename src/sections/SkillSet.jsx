@@ -83,7 +83,7 @@ function SkillSet() {
               <Card>
                 <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
                   <FaBootstrap size={40} className={`${darkMode ? 'text-secondary' : 'text-primary'}`} />
-                  <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Bootstrap 4</h5>
+                  <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Bootstrap</h5>
                 </div>
               </Card>
             </div>
