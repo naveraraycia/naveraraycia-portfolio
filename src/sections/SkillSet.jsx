@@ -3,10 +3,10 @@ import AppContext from "../context/AppContext"
 import Heading from "../components/Heading"
 import Card from "../components/Card"
 import {FaHtml5, FaCss3Alt, FaJs, FaJava, FaReact, FaGitAlt, FaBootstrap, FaPython, FaSass} from "react-icons/fa"
-import { BiLogoFirebase, BiLogoTailwindCss, BiLogoRedux } from "react-icons/bi";
+import { BiLogoFirebase, BiLogoTailwindCss, BiLogoRedux, BiLogoFlutter } from "react-icons/bi";
 import { DiMaterializecss } from "react-icons/di";
 import { FiFigma } from "react-icons/fi";
-import { SiPhp, SiSelenium } from "react-icons/si";
+import { SiPhp, SiSelenium, SiAndroidstudio } from "react-icons/si";
 import { BsFiletypeSql } from "react-icons/bs";
 
 
@@ -125,7 +125,7 @@ function SkillSet() {
         <div data-aos='fade-up' data-aos-delay='400' className="space-y-10 w-full flex flex-col text-center justify-center items-center">
           <div className={`space-y-2 ${darkMode ? 'text-white' : 'text-neutral'}`}>
             <h1 className="font-black uppercase text-4xl">other</h1>
-            <p className="text-sm max-w-lg sm:text-lg">These are technologies I’ve previously worked with and learned from the university.</p>
+            <p className="text-sm max-w-lg sm:text-lg">These are technologies I'm also familiar with since I learned them from the university.</p>
           </div>
 
           <div className="space-y-6 w-full">
@@ -162,6 +162,18 @@ function SkillSet() {
                   </div>
                 </Card>
                 <Card>
+                  <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
+                    <BiLogoFlutter size={40} className={`${darkMode ? 'text-secondary' : 'text-primary'}`} />
+                    <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Flutter</h5>
+                  </div>
+                </Card>
+                <Card>
+                  <div className='space-y-2 uppercase flex font-black flex-col justify-center items-center text-neutral'>
+                    <SiAndroidstudio size={40} className={`${darkMode ? 'text-secondary' : 'text-primary'}`} />
+                    <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Android Studio</h5>
+                  </div>
+                </Card>
+                <Card>
                   <div className='uppercase flex font-black flex-col justify-center items-center'>
                     <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Linux Shell Script</h5>
                   </div>
@@ -181,11 +193,7 @@ function SkillSet() {
                     <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>C++</h5>
                   </div>
                 </Card>
-                <Card>
-                  <div className='uppercase flex font-black flex-col justify-center items-center'>
-                    <h5 className={`text-sm text-center ${darkMode ? 'text-white' : 'text-neutral'} sm:text-lg`}>Android Studio</h5>
-                  </div>
-                </Card>
+                
               </div>
             </div>
           </div>
