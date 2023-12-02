@@ -11,6 +11,10 @@ import smGradPic from '../assets/sm-gradpic.jpg'
 
 function About() {
   const {darkMode} = useContext(AppContext)
+  const birthdate = new Date('11-04-1999')
+  const diffToNow = Date.now() - birthdate.getTime()
+  const ageDate = new Date(diffToNow)
+  const ageAutomatic = Math.abs(ageDate.getFullYear() - 1970)
 
   function handleClickScroll(idName){
     const sectionToScroll = document.getElementById(`${idName}`)
@@ -78,8 +82,8 @@ function About() {
             <div className="space-y-3 text-md">
               <p><span className={`${darkMode ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Name:</span> Raycia Maria Frances R. Navera</p>
               <p><span className={`${darkMode ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Birthdate:</span> 04 November 1999</p>
-              <p><span className={`${darkMode ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Age:</span> 23</p>
-              <p><span className={`${darkMode ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Nationality:</span> Filipino</p>
+              <p><span className={`${darkMode ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Age:</span> {ageAutomatic}</p>
+              <p><span className={`${darkMode ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Citizenship:</span> US Citizen</p>
               <p><span className={`${darkMode ? 'text-[#FF74C3]' : 'text-primary'} font-bold`}>Location:</span> San Diego, CA, USA</p>
             </div>
 
@@ -120,7 +124,7 @@ function About() {
                   <div className="my-4 flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
                     <Badge version='purple'>Drawing</Badge>
                     <Badge version='pink'>Cooking</Badge>
-                    <Badge version='purple'>Card Games</Badge>
+                    <Badge version='purple'>Web Designing</Badge>
                   </div>
                 </div>
                 <div className="space-y-5">

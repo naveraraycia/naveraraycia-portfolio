@@ -14,7 +14,7 @@ function Contact() {
           <div className="space-y-5 w-full md:space-y-10">
             <Heading version={'purple'} number={'05'} title={'Contact Me.'} />
 
-            <p className="text-sm sm:text-lg lg:max-w-[650px]">Get in touch with me through the contact information below. I am <span className={`font-bold ${darkMode ? 'text-secondary': 'text-primary'}`}>currently looking forward for a fun yet challenging job opportunity</span> that would allow me to utilize my skills in web development  to help solve real-life problems in the industry and provide solutions, as well as meet supportive like-minded people.</p>
+            <p className="text-sm sm:text-lg lg:max-w-[650px]">Get in touch with me through the contact information below. I am <span className={`font-bold ${darkMode ? 'text-secondary': 'text-primary'}`}>currently looking forward for a fun yet challenging job opportunity</span> that would allow me to utilize my skills in software programming to help solve real-life problems in the industry and provide solutions, as well as meet supportive like-minded people.</p>
 
             <div className="space-y-5">
               <div className="flex items-center space-x-5">
