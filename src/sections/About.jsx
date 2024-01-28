@@ -122,7 +122,7 @@ function About() {
               <div className="collapse-content flex space-x-5 sm:flex-col sm:space-x-0 sm:-space-y-4"> 
                 <div className="space-y-5">
                   <div className="my-4 flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
-                    <Badge version='purple'>Drawing</Badge>
+                    <Badge version='purple'>Digital Art</Badge>
                     <Badge version='pink'>Cooking</Badge>
                     <Badge version='purple'>Web Designing</Badge>
                   </div>
@@ -131,7 +131,7 @@ function About() {
                   <div className="my-4 flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
                     <Badge version='pink'>Listening to music</Badge>
                     <Badge version='purple'>Programming</Badge>
-                    <Badge version='pink'>Mobile Game</Badge>
+                    <Badge version='pink'>Watching Anime</Badge>
                   </div>
                 </div>
               </div>
@@ -155,7 +155,7 @@ function About() {
                   <div className="my-4 flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5 ">
                     <Badge version='pink'>Anime</Badge>
                     <Badge version='purple'>Kpop</Badge>
-                    <Badge version='pink'>Dogs && Cats</Badge>
+                    <Badge version='pink'>Manga</Badge>
                   </div>
                 </div>
               </div>

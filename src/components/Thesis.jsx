@@ -53,16 +53,6 @@ function Thesis() {
           </>
         )}
 
-        <div className="space-y-3">
-          <h3 className={`font-extrabold text-lg sm:text-xl ${darkMode ? 'text-white' : 'text-neutral'}`}>{thesis.subHeading1.title}</h3>
-          <p className={`${darkMode ? 'text-white' : 'text-neutral'} text-sm`}>{thesis.subHeading1.description}</p>
-        </div>
-
-        <div className="space-y-3">
-          <h3 className={`font-extrabold text-lg sm:text-xl ${darkMode ? 'text-white' : 'text-neutral'}`}>{thesis.subHeading2.title}</h3>
-          <p className={`${darkMode ? 'text-white' : 'text-neutral'} text-sm`}>{thesis.subHeading2.description}</p>
-        </div>
-
         <ul className={`flex flex-wrap text-xs sm:text-sm font-semibold ${darkMode ? 'text-[#61A1FF]' : 'text-primary'}`}>
           {thesis.stack.map((stackItem, index) => (
             <li key={index} className="mr-5">{stackItem}</li>
